@@ -1,0 +1,35 @@
+<!-- edit_name_dialog.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="170dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp">
+
+    <EditText
+        android:id="@+id/edit_brief_dialog_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Nhập tên mới"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Đồng ý"
+        app:layout_constraintEnd_toEndOf="@+id/edit_brief_dialog_name"
+        app:layout_constraintStart_toStartOf="@+id/edit_brief_dialog_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_brief_dialog_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

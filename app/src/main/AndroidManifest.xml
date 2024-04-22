@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BIND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/quy_logo3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/quy_logo3"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Nhom3_crypto_client"
+        tools:targetApi="31" >
+        <activity
+            android:name=".view.QuyViewTradingCommandActivity"
+            android:exported="true" >
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".view.Ban_HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Ban_CommandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.QuyCoinListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.QuyMainActivity"
+            android:exported="true" >
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".view.Binh_ProfileActivity"
+            android:exported="true">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".view.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Binh_Home"
+            android:exported="false" />
+        <activity
+            android:name=".view.Binh_MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Binh_RankActivity"
+            android:exported="true">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".view.Binh_BalanceTransactionActivity"
+            android:exported="true">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".view.Binh_OTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Binh_ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Binh_SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="true" >
+
+            <!--             <intent-filter>-->
+            <!--             <action android:name="android.intent.action.MAIN" />-->
+            <!--             <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--             </intent-filter>-->
+        </activity>
+
+
+
+        <service
+            android:name=".service.CoinService"
+            android:enabled="true">
+        </service>
+        <service
+            android:name=".service.SocketService"
+            android:enabled="true">
+        </service>
+
+
+
+
+        <activity
+            android:name=".view.Binh_SettingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.Quy_GuestCommandsActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

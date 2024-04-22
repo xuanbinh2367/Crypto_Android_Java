@@ -1,0 +1,9 @@
+<!-- res/drawable/custom_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1A91C6" />
+    <corners android:radius="20dp" />
+    <!--đổ bóng-->
+   <!-- <stroke
+        android:width="2dp"
+        android:color="#A1A1A1" />-->
+</shape>

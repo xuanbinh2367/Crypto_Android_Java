@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_item_list_rank"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/binh_custom_background_element">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_brief_user_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="14dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_item_rank_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/binh_ic_user" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_item_rank_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:text="Trần Xuân Bình"
+            android:textColor="#E30909"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cardView_brief_user_image"
+            app:layout_constraintTop_toTopOf="@+id/cardView_brief_user_image" />
+
+        <TextView
+            android:id="@+id/txt_item_rank_money_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="$ 12347383"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_item_rank_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/txt_item_rank_user_name" />
+
+        <ImageView
+            android:id="@+id/image_rank_chart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="22dp"
+            app:layout_constraintStart_toEndOf="@+id/txt_item_rank_money_profit"
+            app:layout_constraintTop_toTopOf="@+id/txt_item_rank_money_profit"
+            app:srcCompat="@drawable/binh_ic_chart" />
+
+        <TextView
+            android:id="@+id/txt_item_rank_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="84%"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/image_rank_chart"
+            app:layout_constraintTop_toTopOf="@+id/image_rank_chart" />
+
+        <ImageView
+            android:id="@+id/image_rank_transfer"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/txt_item_rank_percent"
+            app:layout_constraintTop_toTopOf="@+id/txt_item_rank_percent"
+            app:srcCompat="@drawable/binh_ic_transfer" />
+
+        <TextView
+            android:id="@+id/txt_item_trading_command_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="13.755"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/image_rank_transfer"
+            app:layout_constraintTop_toTopOf="@+id/image_rank_transfer" />
+
+        <TextView
+            android:id="@+id/txt_item_rank_top_number"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/binh_custom_progress_bar"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_item_rank_user_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
